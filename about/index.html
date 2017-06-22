@@ -25,11 +25,17 @@ layout: default
 		</div>
 
 	
-         <!-- Chinese Version -->
-        <div class="zh post-container" sytle="margin:0 auto;">
+        <style>
+			.abc {margin:0 auto;width:720px;border:1px solid;text-align:left;}
+		</style>
+
+
+        <div class="abc" >
     		{% capture about_zh %}{% include about/zh.md %}{% endcapture %}
    			 {{ about_zh | markdownify }}
 		</div>
+
+
 		
 	</body>
 </html>
