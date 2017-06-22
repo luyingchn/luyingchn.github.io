@@ -20,6 +20,9 @@ layout: default
 				<h1>luyingchn</h1>
 				<p>自律,<br>
 					总给你带来意想不到的收获.</p>
+
+					{% capture about_zh %}{% include about/zh.md %}{% endcapture %}
+   			 {{ about_zh | markdownify }}
 			</header>
 			
 		</div>
@@ -27,8 +30,7 @@ layout: default
 	
          <!-- Chinese Version -->
         <div class="zh post-container">
-    		{% capture about_zh %}{% include about/zh.md %}{% endcapture %}
-   			 {{ about_zh | markdownify }}
+    		
 		</div>
 		
 	</body>
